@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+
+# Penn-Fudan images may not be reposted - fetch them with scripts/fetch_images.py
+data/images/
+data/PennFudanPed.zip
+# Generated from the dataset's own annotations by scripts/pennfudan_reference.py
+labels/reference.json
+# Label Studio's local database and uploads
+label-studio-data/

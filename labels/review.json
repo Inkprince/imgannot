@@ -1,0 +1,20 @@
+{
+  "_about": "Manual review of the hand-drawn passes against docs/labelling_guideline.md. Every image in both passes was inspected as an overlay; uncertain boxes were checked at full resolution. Only deletions are recorded: missed objects were not added. 'box' is the 1-based box number within the image.",
+  "pass1": {
+    "source": "labels/pass1.json",
+    "delete": [
+      {"image": "PennPed00018.png", "box": 3, "reason": "only a face visible behind another person - under 25 % visible"},
+      {"image": "PennPed00029.png", "box": 5, "reason": "mannequin in a shop window - excluded class"},
+      {"image": "PennPed00076.png", "box": 2, "reason": "wall lantern, not a person"}
+    ]
+  },
+  "pass2": {
+    "source": "labels/pass2.json",
+    "delete": [
+      {"image": "PennPed00029.png", "box": 5, "reason": "mannequin in a shop window - excluded class"},
+      {"image": "PennPed00032.png", "box": 6, "reason": "driver seen through windscreen - under 25 % visible"},
+      {"image": "PennPed00039.png", "box": 3, "reason": "forklift - not a vehicle under the guideline (rule added after this review)"},
+      {"image": "PennPed00076.png", "box": 2, "reason": "wall lantern, not a person"}
+    ]
+  }
+}

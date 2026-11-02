@@ -1,0 +1,27 @@
+Pass A: labels/pass1.json  (50 images)
+Pass B: labels/pass2.json  (50 images)
+
+-- boxes (50 images; pass A 286, pass B 294; match at IoU >= 0.5)
+   F1 (location + class)      0.914
+   F1 (location only)         0.914
+   IoU of matched pairs       mean 0.855, median 0.886, min 0.540
+   class agreement (matched)  100.0%  (265/265)
+   F1 (location only) at IoU  >=0.5: 0.914, >=0.75: 0.766, >=0.9: 0.403
+   per class F1               person: 0.942 (A 215, B 218), two_wheeler: 0.800 (A 29, B 31), vehicle: 0.851 (A 42, B 45)
+   lowest-agreement images:
+     FudanPed00024.png        F1 0.50  (A 4, B 4, agreed 2)
+     PennPed00083.png         F1 0.67  (A 3, B 3, agreed 2)
+     FudanPed00028.png        F1 0.78  (A 8, B 10, agreed 7)
+     FudanPed00052.png        F1 0.78  (A 11, B 12, agreed 9)
+     PennPed00012.png         F1 0.80  (A 3, B 2, agreed 2)
+
+-- polygons (10 images; pass A 27, pass B 27; match at IoU >= 0.5)
+   F1 (location + class)      0.926
+   F1 (location only)         0.926
+   IoU of matched pairs       mean 0.873, median 0.908, min 0.649
+   class agreement (matched)  100.0%  (25/25)
+   F1 (location only) at IoU  >=0.5: 0.926, >=0.75: 0.815, >=0.9: 0.519
+   per class F1               person: 0.926 (A 27, B 27)
+   lowest-agreement images:
+     PennPed00012.png         F1 0.40  (A 3, B 2, agreed 1)
+     PennPed00080.png         F1 0.91  (A 5, B 6, agreed 5)
